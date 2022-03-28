@@ -1,5 +1,4 @@
-/* TinyWM is written by Nick Welch <mack@incise.org>, 2005.
- *
+/*
  * This software is in the public domain
  * and is provided AS IS, with NO WARRANTY. */
 
