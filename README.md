@@ -1,2 +1,2 @@
 # twm
-Ridiculously minimal window manager written in 52 lines of code
+Ridiculously minimal window manager written in 52 lines of pure C
