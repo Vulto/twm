@@ -1,5 +1,5 @@
 # twm
-Ridiculously minimal window manager written in 42 loc
+Ridiculously minimal window manager written in 42 lines of code
 
 This is a simple program written in C that uses the Xlib library
 to interact with the X Window System, which is the underlying system
