@@ -1,0 +1,54 @@
+.TH TWM 1 "January 2026" "twm-0.1"
+.SH NAME
+twm \- tiny window manager
+.SH SYNOPSIS
+.B twm
+.SH DESCRIPTION
+.B twm
+is a minimal reparenting-free window manager for X11, inspired by tinywm and suckless philosophy.
+.PP
+It supports:
+- Raising windows with Super+F1 (on window under cursor)
+- Moving windows with Super+Left mouse drag
+- Resizing windows with Super+Right mouse drag
+- Closing focused window with Super+C (sends WM_DELETE_WINDOW)
+- Spawning st terminal with Super+Return
+- Quitting the WM with Super+Q
+.PP
+Configuration is done at compile-time via
+.B config.h
+(edit and recompile).
+.SH KEYBINDINGS
+All use Mod4Mask (Super key) by default:
+.TP
+Super+F1
+Raise window under cursor
+.TP
+Super+Left drag
+Move window
+.TP
+Super+Right drag
+Resize window
+.TP
+Super+C
+Close focused window
+.TP
+Super+Return
+Spawn st terminal
+.TP
+Super+Q
+Quit twm
+.SH CUSTOMIZATION
+Copy
+.B config.h
+from a default if provided, modify keybindings/commands, then recompile.
+.SH BUILDING
+Use the provided nob.c build system:
+.IP \(bu 2
+./c -ci  (-c to compile, -i install), Configure nob.h in case you need specific PATH
+.SH SEE ALSO
+dwm(1), tinywm, X(7)
+.SH AUTHOR
+Vulto jeff.ssa@proton.me
+.SH BUGS
+Report to GitHub issues.
